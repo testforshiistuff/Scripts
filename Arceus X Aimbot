@@ -131,8 +131,8 @@ local function CIXXD_fake_script() -- TextButton_2.LocalScript
 		local nearest = nil
 		local last = math.huge
 		for i,v in pairs(game.Players:GetPlayers()) do
-			if v ~= game.Players.LocalPlayer and game.Players.LocalPlayer.Character and v.Character and v.Character:FindFirstChild(trg_part) then
-				if game.Players.LocalPlayer.Character:FindFirstChild(trg_part) then
+			if v ~= game:GetService("Players").LocalPlayer and game:GetService("Players").LocalPlayer.Character and v.Character and v.Character:FindFirstChild(trg_part) then
+				if game:GetService("Players").LocalPlayer.Character:FindFirstChild(trg_part) then
 					local ePos, vissss = workspace.CurrentCamera:WorldToViewportPoint(v.Character[trg_part].Position)
 					local AccPos = Vector2.new(ePos.x, ePos.y)
 					local mousePos = Vector2.new(workspace.CurrentCamera.ViewportSize.x / 2, workspace.CurrentCamera.ViewportSize.y / 2)
