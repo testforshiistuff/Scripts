@@ -1,4 +1,4 @@
-local Alphabet,old = loadstring(game:HttpGet("https://raw.githubusercontent.com/x114/RobloxScripts/main/Alphabet"))()
+local Alphabet,old = loadstring(game:HttpGet("https://raw.githubusercontent.com/testforshiistuff/Scripts/main/letters"))()
 old = hookmetamethod(game,"__namecall",function(self,...)
     if getnamecallmethod() == "FireServer" and tostring(self) == "SayMessageRequest" then
         local Arguments = {...}
