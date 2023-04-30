@@ -1,0 +1,8 @@
+local Players = game:GetService("Players").LocalPlayer
+local Character = Players.Character
+
+Character["Falling down"]:Destroy()
+Character.Swimming:Destroy()
+Character.Pushed:Destroy()
+Character.KillScript:Destroy()
+Character.RagdollMe:Destroy()
